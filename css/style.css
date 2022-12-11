@@ -1,26 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,600&display=swap');
 
 *{
-    font-family:"Open Sans", sans-serif;
     margin: 0;
     padding: 0;
-
 }
 
 
 body{
-    height: 100vh; 
+    display: grid;
+    grid-column: 1;
+    /* height: 100vh;  */
     background-image: linear-gradient(to right, rgb(47, 223, 141) , rgb(22, 161, 161));
-    display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
-.titulo{
-    /* display: inline-block; */
-    /* text-align: center; */
-    /* align-items: center; */
-    /* justify-content: center; */
+h1{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Courier, monospace;
 }
 
 .relogio{
@@ -32,6 +35,7 @@ body{
     background: transparent;
     border-radius: 3px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+    font-family:"Open Sans", sans-serif;
 }
 
 .relogio div{
@@ -46,13 +50,124 @@ body{
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
     letter-spacing: 3px;
+    font-family:"Open Sans", sans-serif;
 }
 
 .relogio span{
     font-size: 60px;
     font-weight: bold;
+    font-family:"Open Sans", sans-serif;
 }
 
 .relogio span.tempo{
     font-size: 15px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    margin-top: 500px;
+    font-family: cursive;
+}
+
+footer a.git{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(12, 112, 25);
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-family: sans-serif
+}
+
+footer a.git:hover{
+    color: rgb(14, 245, 14);
+    background-color: rgb(14, 96, 247);
+}
+
+footer h3{
+    margin-bottom: 15px;
+}
+
+@media(max-width: 720px){
+
+    body{
+        display: grid;
+        grid-column: 1;
+        /* height: 100vh;  */
+        background-image: linear-gradient(to right, rgb(47, 223, 141) , rgb(22, 161, 161));
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+    h1{
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        text-align: center;
+    
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Courier, monospace;
+    }
+    
+    .relogio{
+        display: grid; /*Um item(div's nesse caso) ao lado do outro*/  /**/
+        grid-column: 1;
+        gap: 0px;
+        align-items: center;
+        align-self: center;
+        place-self: center;
+        justify-content: space-around; /*Espaços iguais entre os elementos*/
+        /* justify-content:  space-evenly; */
+        height: 480px;
+        width: 190px;
+        background: transparent;
+        border-radius: 3px;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+        font-family:"Open Sans", sans-serif;
+    }
+    
+    .relogio div{
+        
+        height: 100px;
+        width: 120px;
+        /* display: flex; */
+        flex-direction: column; /*Alinhando os elementos das divs em colunas*/
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        align-content: space-between;
+        background-color: rgba(5, 5, 5, 0.9);
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+        letter-spacing: 3px;
+        font-family:"Open Sans", sans-serif;
+    }
+    
+    .relogio span{
+        font-size: 20px;
+        font-weight: bold;
+        font-family:"Open Sans", sans-serif;
+    }
+    
+    .relogio span.tempo{
+        font-size: 12px;
+    }
+    
+    footer{
+        color: white;
+        text-align: center;
+        margin-top: 160px;
+        font-family: cursive;
+    }
+    
+    footer a.git{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        background-color: rgb(12, 112, 25);
+        padding: 8px 20px;
+        border-radius: 5px;
+        font-family: sans-serif
+    }
+    
 }
